@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First ZTM Website</title>
+  </head>
+  <body>
+   
+    <form>
+      First Name: <input type="text" name="fName" /><br />
+      Last Name: <input type="text" name="lName" /><br />
+      Email: <input type="email" required name="email" /><br />
+      <!--the required here means the filed must be filled out for the submit to work-->
+      Password: <input type="password" min="8" name="password" /><br />
+      <!--min is the minimum characters the password will need-->
+      Birthday: <input type="date" name="date" name="birthday" /><br />
+      Gender: <br />
+      <!-- radio created a lits of options when grouped togther you can select one within the form -->
+      <!-- radio needs to be grouped together by the name attribute to ensure you can only select one of the options in the form  -->
+      <!-- with the radio options a value must be assigned for the specific informaion selected to be submitted with the form -->
+      <input type="radio" name="gender" value="Male"/>Male<br />
+      <input type="radio" name="gender" value="Female"/>Female<br />
+      <input type="radio" name="gender" value="Other"/>Other<br />
+      <!-- creates a checkbox list to be able to select multiple -->
+      Pets: <br />
+      <input type="checkbox" name="cat" />Cat<br />
+      <input type="checkbox" name="dog" />Dog<br />
+      <input type="checkbox" name="other" />Other<br />
+      <!-- select creates a dropdown with options being what can be selected in the dropdown -->
+      Cars: <br />
+      <!-- select has to have the name for it and the options to have a value for the specific information to be passed with form submitted -->
+      <select name="cars">
+        <option value="Volvo" value="volvo">Volvo</option>
+        <option value="Audi" value="audi">Audi</option>
+        <option value="Toyota" value="toyota">Toyota</option>
+        <option value="Ford" value="ford">Ford</option>
+      </select>
+      <br />
+      <input type="submit" value="Submit" /><br />
+      <input type="reset" value="Reset Form" /><br />
+    </form>
+  </body>
+</html>
